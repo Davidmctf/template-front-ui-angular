@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TemplateFrontUi</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+    <script>
+      (function () {
+        var theme = localStorage.getItem('template-theme');
+        if (theme === 'dark' || (!theme && matchMedia('(prefers-color-scheme:dark)').matches)) {
+          document.documentElement.classList.add('app-dark');
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+@plugin 'tailwindcss-primeui';
+@import 'primeicons/primeicons.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'material-symbols/outlined.css';
+@import 'material-symbols/rounded.css';
+@import 'material-symbols/sharp.css';
+
+@custom-variant dark (&:where(.app-dark, .app-dark *));
+
+html {
+  color-scheme: light;
+}
+
+html.app-dark {
+  color-scheme: dark;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: var(--p-surface-50);
+  color: var(--p-surface-950);
+}
+
+html.app-dark,
+html.app-dark body {
+  background-color: var(--p-surface-950);
+  color: var(--p-surface-50);
+}
