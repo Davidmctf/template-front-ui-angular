@@ -14,6 +14,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - After working: write a `session_context` row (summary, tasks_completed, files_modified, pending_tasks) and `session_notes` entries.
 - Project-specific decisions and state go into `context.sqlite`, not into markdown. Don't create temporary or ad-hoc markdown files unless the user asks for them.
 - `context.sqlite` is git-ignored (`.github/*` is ignored except `agents/` and the two instruction files), so session state exists only on this machine.
+- Agents exist twice with the same body: `.claude/agents/*.md` (Claude Code) and `.github/agents/*.agent.md` (Copilot frontmatter). Change both together.
 
 Coding rules from `.github/copilot-instructions.md` that are easy to get wrong:
 

@@ -147,6 +147,8 @@ src/
 | `Clean_Architecture_FrontEnd.md`                             | Full Clean Architecture specification                                |
 | `.github/copilot-instructions.md`                            | Angular/TypeScript coding standards                                  |
 | `.github/universal-rules.instructions.md`                    | Immutable agent execution rules                                      |
+| `.claude/agents/*.md`                                        | SFD v3.1 agents for Claude Code                                      |
+| `.github/agents/*.agent.md`                                  | Same agents for GitHub Copilot (same body, Copilot frontmatter)      |
 | `tsconfig.json` / `tsconfig.app.json` / `tsconfig.spec.json` | TypeScript config (strict, project refs, path aliases)               |
 | `.prettierrc`                                                | Formatting (printWidth: 100, single quotes, angular parser for HTML) |
 | `.postcssrc.json`                                            | TailwindCSS 4 PostCSS plugin                                         |

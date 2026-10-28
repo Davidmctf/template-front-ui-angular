@@ -87,6 +87,8 @@ src/
 | `Clean_Architecture_FrontEnd.md`                             | Full Clean Architecture specification                                              |
 | `.github/copilot-instructions.md`                            | Angular/TypeScript coding standards                                                |
 | `.github/universal-rules.instructions.md`                    | Immutable agent execution rules                                                    |
+| `.claude/agents/*.md`                                        | SFD v3.1 agents for Claude Code                                                    |
+| `.github/agents/*.agent.md`                                  | Same agents for GitHub Copilot (same body, Copilot frontmatter)                    |
 | `tsconfig.json` / `tsconfig.app.json` / `tsconfig.spec.json` | TypeScript config (strict, project refs, path aliases)                             |
 | `.prettierrc`                                                | Formatting (printWidth: 100, single quotes, angular parser for HTML)               |
 | `.postcssrc.json`                                            | TailwindCSS 4 PostCSS plugin                                                       |
@@ -173,7 +175,7 @@ Designed and maintained by [David Cruz](https://github.com/Davidmctf) —
 - **Architecture standard** (`Clean_Architecture_FrontEnd.md`): an original adaptation of Clean
   Architecture to the front-end, with two structural guidelines (layer-first / feature-first)
   derived from experience on production projects.
-- **Agent system** (`.github/agents/`, `universal-rules.instructions.md`): agents written in
+- **Agent system** (`.claude/agents/`, `.github/agents/`, `universal-rules.instructions.md`): agents written in
   [SFD (Syntax Functional Declarative)](https://davidmctf.github.io/#/sfd-project) and a persistent session-context workflow backed by
   `context.sqlite`.
 - The Angular conventions in `copilot-instructions.md` build on the
