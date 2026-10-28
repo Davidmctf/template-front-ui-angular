@@ -121,16 +121,16 @@ src/
 │   ├── app.ts                    # Root component + ThemeService injection + ButtonModule
 │   ├── app.config.ts             # Providers: PrimeNG, Router (input binding, scroll), Locale es-MX
 │   ├── app.routes.ts             # Empty (lazy-loaded features)
-│   └── core/
-│       ├── config/
-│       │   └── prime-ng.config.ts    # PrimeNG theme (Nora preset, slate surfaces, darkModeSelector, locale)
-│       └── services/
-│           ├── theme-service.ts      # Signal-based dark/light toggle, localStorage persistence
-│           └── layout-service.ts     # Sidebar state (collapsed/mobile) — extend or remove as needed
-├── shared/
-│   └── utils/
-│       ├── array.util.ts           # Array utilities (with tests)
-│       └── type-guards.util.ts     # Type guard helpers (with tests)
+│   ├── core/
+│   │   ├── config/
+│   │   │   └── prime-ng.config.ts    # PrimeNG theme (Nora preset, slate surfaces, darkModeSelector, locale)
+│   │   └── services/
+│   │       ├── theme-service.ts      # Signal-based dark/light toggle, localStorage persistence
+│   │       └── layout-service.ts     # Sidebar state (collapsed/mobile) — extend or remove as needed
+│   └── shared/
+│       └── utils/
+│           ├── array.util.ts         # Array utilities (with tests)
+│           └── type-guards.util.ts   # Type guard helpers (with tests)
 ├── environments/
 │   ├── environment.ts              # Production placeholder (empty)
 │   └── environment.development.ts  # Development placeholder (empty)
@@ -153,7 +153,7 @@ src/
 | `.prettierrc`                                                | Formatting (printWidth: 100, single quotes, angular parser for HTML) |
 | `.postcssrc.json`                                            | TailwindCSS 4 PostCSS plugin                                         |
 | `.husky/pre-commit`                                          | Runs `lint-staged` (Prettier)                                        |
-| `.husky/pre-push`                                            | Runs `pnpm build && pnpm test --no-watch`                            |
+| `.husky/pre-push`                                            | Runs `pnpm format:check && pnpm build && pnpm test --no-watch`       |
 | `pnpm-workspace.yaml`                                        | Native build allowances                                              |
 | `.editorconfig`                                              | Editor settings (UTF-8, 2-space indent, single quotes)               |
 | `.vscode/extensions.json`                                    | Recommends `angular.ng-template`                                     |

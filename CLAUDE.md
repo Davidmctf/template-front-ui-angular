@@ -65,9 +65,7 @@ Path aliases (in `tsconfig.json`): `@app/*`, `@core/*`, `@shared/*` (all under `
 
 ## Corrections and gotchas
 
-- Shared utilities live in `src/app/shared/utils/`, not `src/shared/` as the AGENTS.md tree shows.
 - `src/app/app.html` is the Angular welcome placeholder. `src/app/app.spec.ts` asserts its `Hello, template-front-ui` heading, so update that spec when you replace the placeholder.
 - `src/styles.css` sets `overflow: hidden` on `html, body`. Any layout must provide its own scroll container.
-- `src/index.html` has `lang="en"` while the app locale is `es-MX`.
 - `HttpClient` is not provided yet, and both environment files export `{}`.
 - Chart.js is installed but not used anywhere.
